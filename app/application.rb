@@ -28,7 +28,7 @@ class Application
       cart_item_add= req.params["item"]
       if @@items.include?(cart_item_add)
         @@cart<<cart_item_add
-        resp.write "#added {cart_item_add}"
+        resp.write "added #{cart_item_add}"
       else resp.write "We don't have that item"
     
       end 
